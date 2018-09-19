@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: red;
+    background-color: purple;
     overflow: hidden;
 }
 
@@ -27,6 +27,15 @@
     color: gold;
 }
 /*Code is originated from W3schools.com */
+
+body
+{
+    background: url("Images/Sportsbackground.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+
 h1
 {
     text-decoration: underline;
@@ -43,4 +52,5 @@ p
 p
 {
     text-align: center;
+    color: white;
 }

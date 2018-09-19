@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: red;
+    background-color: purple;
     overflow: hidden;
 }
 
@@ -33,4 +33,24 @@ h1
     font-family: fantasy;
     color: salmon;
     font-size: 80px;
+}
+
+#cassidy
+{
+    -webkit-transform:rotate(90deg);
+
+}
+
+
+#jonny
+{
+    -webkit-transform:rotate(90deg);
+
+}
+/*Code of rotation from Paul McCann on Quora.com */
+body
+{
+    background: url("Images/Friends.JPG") no-repeat;
+    background-size: cover;
+    color: rgba(44, 141, 214, 0.87);
 }
