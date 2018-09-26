@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Sports.css">
+    <title>Sports I play</title>
+</head>
+<body>
+
+
+<div class="topnav" align="center">
+    <a class="Home" href="index.html">Home</a>
+    <a href="Sports.html">Sports</a>
+    <a href="Family.html">Family</a>
+    <a href="Friends.html">Friends</a>
+</div>
+
+<h1 align="center"> Sports I Play</h1>
+<!-- Code for alignment is from w3schools -->
+
+<p>
+<img src="Images/basketball.PNG" height="350" width="350"/>
+<br>
+<br>
+    I have been playing basketball for 10 years now.<br>
+    My jersey numbers were 24,9,38,4.<br>
+    My family friend from Canada inspired me to play basketball when I was 6.<br>
+    My favorite player is the GOAT Kobe Bryant.<br>
+    I play Shooting gaurd and Small forward.<br>
+    I love to play basketball with my friends but also training hard to improve my game<br>
+
+    <a href="http://www.nba.com/#/">Here is a link to the NBA page!</a>
+<br>
+<br>
+<img src="Images/volleyball.jpg" height="370" width="260"/>
+<br>
+<br>
+    I just started playing volleyball last year march, but I already love it.<br>
+    My bestfriend name Jonny convinced me to play volleyball<br>
+    I am a right side hitter for HEHS and plan on playing club.<br>
+    My goal is to play college volleyball and get a scholarship for it.<br>
+    Volleyball is a huge commitment to me as I quit other sports/activities for it.<br>
+
+    <a href="https://www.teamusa.org/USA-Volleyball">Here is a link to the USA volleyball page!</a>
+</p>
+</body>
+<h4 align="center"> Countdown till next volleyball season!</h4>
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+<style>
+    p {
+        text-align: center;
+        font-size: 30px;
+    }
+</style>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("March 3, 2019 2:45:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+<!-- code from w3schools.com --> 
+</html>

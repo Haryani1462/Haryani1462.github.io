@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Family.css">
+
+</head>
+<style>
+    table, th, td {
+        border: 3px solid black;
+    }
+</style>
+<body>
+
+
+
+<div class="topnav" align="center">
+    <a class="Home" href="index.html">Home</a>
+    <a href="Sports.html">Sports</a>
+    <a href="Family.html">Family</a>
+    <a href="Friends.html">Friends</a>
+</div>
+
+
+<!-- Code for alignment is from w3schools -->
+
+</body>
+
+
+
+<img src="Images/Parents:jalaj.jpeg" align="right" height="300" width="250"/>
+
+
+<img src="Images/Sisters.jpeg" align="center" height="300" width="400"/>
+
+<img id="Family" align="left" src="Images/Fam.jpg" height="300" width="300"/>
+
+
+<img src="images/Old.JPG" align="right"  height="300" width="314"/>
+
+<table align="center" style="width: 80%" id="familytable" border="solid">
+    <tr>
+        <th>Name</th>
+        <th>Relationship</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Shankar</td>
+        <td>Father</td>
+        <td>56</td>
+    </tr>
+    <tr>
+        <td>Kavita</td>
+        <td>Mom</td>
+        <td>47</td>
+    </tr>
+    <tr>
+        <td>Sandhya</td>
+        <td>Sister</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>Sumran</td>
+        <td>Sister</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Jalaj</td>
+        <td>Sister</td>
+        <td>19</td>
+    </tr>
+</table>
+
+<<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+    }
+</style>
+<div class="slideshow-container">
+
+    <div class="mySlides fade" style="display: none;">
+        <img src="Images/Parents:jalaj.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade" style="display: block;">
+        <img src="Images/Sisters.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade" style="display: none;">
+        <img src="Images/Old.JPG" style="height:800px ; width:100%">
+    </div>
+
+
+    <div style="text-align:center">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <!-- code from w3schools.com -->
+</html>
+

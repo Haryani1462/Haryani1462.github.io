@@ -1,0 +1,58 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: purple;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: Inherit;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 75px;
+    padding: 120px 120px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: blue;
+    color: gold;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: black;
+    color: gold;
+}
+/*Code is originated from W3schools.com */
+h1
+{
+    text-decoration: underline;
+    font-family: fantasy;
+    color: salmon;
+    font-size: 80px;
+}
+
+body
+{
+    background: url("images/family.jpg");
+    background-size: cover;
+
+}
+
+#Family
+{
+     align-content: space-around;
+    -webkit-transform:rotate(270deg);
+    /*Code of rotation from Paul McCann on Quora.com */
+}
+
+#familytable
+{
+    color: #2638ff;
+    font-family: Zapfino, cursive;
+}
+
+
