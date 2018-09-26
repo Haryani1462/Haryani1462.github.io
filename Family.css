@@ -37,7 +37,7 @@ h1
 
 body
 {
-    background: url("Images/family.jpg");
+    background: url("Images/family.jpg") no-repeat;
     background-size: cover;
 
 }
