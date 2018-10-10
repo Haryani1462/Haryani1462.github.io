@@ -62,21 +62,29 @@ function temperaturebug() {
 /**
  * @return {number}
  */
-function Calorie() {
-    var language = document.project2.input1.value; //capture data from input box on HTML
-    language = language.toLowerCase();
-    var num1 = Number(document.project2.input2.value);
-    //here comes the LOGIC
-    if (language === 'wk') {
-        return num1 * 7.6;
+function Calorie()
+{
+    var activity = document.getElementById('workList').value;
+    var num1 = Number(document.getElementById('input2').value);
+
+    if (activity === 'walking')
+    {
+        document.getElementById('calorie').src="Images/walking.JPG";
+        return num1 * 3;
     }
-    else if (language === 'ru') {
+    else if (activity === 'running')
+    {
+        document.getElementById('calorie').src="Images/running.JPG";
         return num1 * 13.2;
     }
-    else if (language === 'sw') {
+    else if (activity === 'swimming')
+    {
+        document.getElementById('calorie').src="Images/swimming.JPG";
         return num1 * 10;
     }
-    else if (language === 'vg') {
+    else if (activity === 'video game')
+    {
+        document.getElementById('calorie').src="Images/gaming.JPG";
         return num1 * 2.5;
     }
 }
