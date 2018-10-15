@@ -1,7 +1,7 @@
 .topnav {
-                                              background-color: purple;
-                                              overflow: hidden;
-                                          }
+    background-color: purple;
+    overflow: hidden;
+}
 
 /* Style the links inside the navigation bar */
 .topnav a {
