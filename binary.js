@@ -3,7 +3,7 @@ function tenToSmall(num, base) //convert a base 10 number to a smaller base
 {
     //the 10tosmall function is expecting a number(num) in base 10
     //it will convert the number (num) to the value of 'base'
-    num = 79; //number to convert
+    num = document.getElementById('results').value; //number to convert
     base = 2; //destination base
     smallNum = ""; //store remainders here
 
@@ -21,7 +21,7 @@ function tenToSmall(num, base) //convert a base 10 number to a smaller base
 
 function smallToTen(num, base) //convert a small base number to base-10
 {
-    num = 1101; //13
+    num = document.getElementById('binary').value; //13
     base = 2; //base of number to convert to base 10
     tenNum = 0; //stores number to be output at the end
     numLenght = num.toString().Lenght; //converts num to a string, then counts the number of characters in the string

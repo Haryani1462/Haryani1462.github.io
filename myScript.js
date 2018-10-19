@@ -52,7 +52,7 @@ function temperaturebug() {
     }
     else if (num >= -10)
     {
-        document.getElementById('weather').src = "Images/Winter.jpg";
+        document.getElementById('weather').src = "Images/Winter.JPG";
         return "WINTER!"
     }
 
@@ -88,3 +88,37 @@ function Calorie()
         return num1 * 2.5;
     }
 }
+
+
+
+/**
+ * @return {number}
+ */
+function Calorie()
+{
+    var activity = document.getElementById('workList').value;
+    var num1 = Number(document.getElementById('input2').value);
+
+    if (activity === 'walking')
+    {
+        document.getElementById('calorie').src="Images/walking.JPG";
+        return num1 * 3;
+    }
+    else if (activity === 'running')
+    {
+        document.getElementById('calorie').src="Images/running.JPG";
+        return num1 * 13.2;
+    }
+    else if (activity === 'swimming')
+    {
+        document.getElementById('calorie').src="Images/swimming.JPG";
+        return num1 * 10;
+    }
+    else if (activity === 'video game')
+    {
+        document.getElementById('calorie').src="Images/gaming.JPG";
+        return num1 * 2.5;
+    }
+}
+
+
