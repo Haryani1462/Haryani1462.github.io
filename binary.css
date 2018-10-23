@@ -26,3 +26,19 @@
     color: gold;
 }
 /*Code is originated from W3schools.com */
+
+h1
+{
+    text-decoration: underline;
+    font-family: fantasy;
+    color: darkred;
+    font-size: 80px;
+}
+body
+{
+    background: url("Images/Binary.png") no-repeat;
+    background-size: cover;
+    color: navajowhite;
+    font-family: Zapfino;
+
+}

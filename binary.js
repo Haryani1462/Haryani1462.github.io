@@ -1,17 +1,13 @@
-
-function tenToSmall(num, base) //convert a base 10 number to a smaller base
+function tenToSmall(num, base)
 {
-    //the 10tosmall function is expecting a number(num) in base 10
-    //it will convert the number (num) to the value of 'base'
-    num = document.getElementById('results').value; //number to convert
-    base = 2; //destination base
-    smallNum = ""; //store remainders here
+    num = document.getElementById('num1').value;
+    base = document.getElementById('base1').value;
+    smallNum = "";
 
-    while (num > 0) //continue looping while num isnt zero
+    while (num > 0)
     {
-        smallNum = num%base + smallNum ; //3%5 = 2... % returns remainder
-        //setup num for the next iteration of the loop
-        num= Math.floor(num/base);
+        smallNum = num%base + smallNum;
+        num = Math.floor(num/base);
         alert(smallNum);
         alert(num);
     }
@@ -19,24 +15,46 @@ function tenToSmall(num, base) //convert a base 10 number to a smaller base
     return smallNum;
 }
 
-function smallToTen(num, base) //convert a small base number to base-10
+function smallToTen(num, base)
 {
-    num = document.getElementById('binary').value; //13
-    base = 2; //base of number to convert to base 10
-    tenNum = 0; //stores number to be output at the end
-    numLenght = num.toString().Lenght; //converts num to a string, then counts the number of characters in the string
+    num = document.getElementById('binaryNum').value;
+    base = document.getElementById('base').value;
+    tenNum = 0;
+    numLength = num.toString().length;
 
-    while (numLenght > 0)
+    while (numLength > 0)
     {
-        var denominator = Math.pow(10,(numLenght));//gets the denominator
-        //for 1101, denomnators willbe 1000,100,10,1
-        var currentDigit = math.floor(num/denominator); //captures a 1 or 0 to multiply by 2^numlength
-        //above means 1101/1000 = 1... 101/100 = 1...01/10 = 0,,, 1/1=1...
-        tenNum = tenNum +currentDigit*Math.pow(base,numlenght-1);
-        //currentDigit*2^3 .... currentDigit*2^2...etc
-        num = num%denominator; //reduces num for next iteration
-        // 1101 > 101 > 01 > 1 . 0
-        numLenght--; //decrease the numLenght value by 1... eventually it will hit 0
+        var denominator = Math.pow(10,(numLength-1));
+        var currentDigit = Math.floor(num/denominator);
+        tenNum = tenNum + currentDigit*Math.pow(base,numLength-1);
+        num = num%denominator;
+        numLength--;
     }
     return tenNum;
+}
+
+function baseToBase()
+{
+    num = document.getElementById('num').value;
+    base = document.getElementById('baseOfNum').value;
+    newBase = document.getElementById('newBase').value;
+    tenNum = 0;
+    numLength = num.toString().length;
+    smallNum = "";
+
+    while (numLength > 0)
+    {
+        var denominator = Math.pow(10,(numLength-1));
+        var currentDigit = Math.floor(num/denominator);
+        tenNum = tenNum + currentDigit*Math.pow(base,numLength-1);
+        num = num%denominator;
+        numLength--;
+    }
+
+    while (tenNum > 0)
+    {
+        smallNum = tenNum%newBase + smallNum;
+        tenNum = Math.floor(tenNum/newBase);
+    }
+    return smallNum
 }
