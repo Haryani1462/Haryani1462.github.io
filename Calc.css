@@ -1,0 +1,68 @@
+button
+{
+    background-color: blue;
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: none;
+    border-radius: 45%;
+
+}
+.operator
+{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: none;
+    border-radius: 55%;
+    font-family: Chalkboard, serif;
+}
+input
+{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-family: Chalkboard, serif;
+}
+body
+{
+    background-color: red;
+    text-align: center;
+    font-family: Chalkboard, serif;
+    font-size: 25px;
+
+}
+
+/* Help from Karen Koo with code for calculator design */
+
+.topnav {
+    background-color: purple;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: Inherit;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 75px;
+    padding: 120px 120px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: blue;
+    color: gold;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: black;
+    color: gold;
+}
+/*Code is originated from W3schools.com */
