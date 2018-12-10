@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volleyball quiz!</title>
+    <link  rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
+</head>
+<body>
+<div class="topnav" align="center">
+    <a class="Home" href="index.html">Home</a>
+    <a href="Sports.html">Sports</a>
+    <a href="Family.html">Family</a>
+    <a href="Friends.html">Friends</a>
+    <a href="Javaproject.html">Mini-projects</a>
+    <a href="Binary.html">Base converter</a>
+    <a href="mad.html">Mad Libs</a>
+    <a href="quiz.html">Quiz</a>
+</div>
+
+
+<form name="quizs">
+    <img src="Images/vballljpg.jpg" height="500" width="500"/>
+    <br><br><br>
+    Question 1: What is the name of the position of the player that wears a different color jersey? <br>
+    <input type="text" name="a1">
+<br><br>
+    Question 2: How many points does it take to win a volleyball game? <br>
+    <input type="text" name="a2">
+ <br><br>
+    Question 3: What action can result in an ACE?<br>
+    <input type="radio" name="a3" value="Serve">Serve<br>
+    <input type="radio" name="a3" value="Pass">Pass<br>
+    <input type="radio" name="a3" value="Hit">Hit<br>
+    <input type="radio" name="a3" value="Set">Set<br>
+    <br><br>
+    Question 4: What is the maximum amount of sets you can have in a Highschool volleyball game?<br>
+    <input type="radio" name="a4" value="2">2<br>
+    <input type="radio" name="a4" value="3">3<br>
+    <input type="radio" name="a4" value="4">4<br>
+    <input type="radio" name="a4" value="5">5<br>
+    <br><br>
+    Question 5: What are volleyball positions?(click all that apply<br>
+    <input type="checkbox" name="a5A" value="Outside">Outside<br>
+    <input type="checkbox" name="a5B" value="Point guard">Point guard<br>
+    <input type="checkbox" name="a5C" value="Right side">Right side<br>
+    <input type="checkbox" name="a5D" value="Wicket-keeper">Wicket-keeper<br>
+    <input type="checkbox" name="a5E" value="Striker">Striker<br>
+    Question 6: What are types of serves?(click all that apply)<br>
+    <input type="checkbox" name="a6A" value="Jump top spin">Jump top spin<br>
+    <input type="checkbox" name="a6B" value="Standing right spin">Standing right spin<br>
+    <input type="checkbox" name="a6C" value="Jump float">Jump float<br>
+    <input type="checkbox" name="a6D" value="Left hit curl">Left hit curl<br>
+    <input type="checkbox" name="a6E" value="Standing float">Standing float<br>
+
+
+
+    <button type="button" onclick=document.getElementById('and').innerHTML=checkAnswers()>Check!</button>
+
+
+</form>
+<p id="and">
+
+</p>
+</body>
+</html>
