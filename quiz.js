@@ -64,8 +64,9 @@ function checkAnswers() {
     else{
         feedback.push("WRONG! Question 6 was Jump top spin, Jump float ,Standing float");
     }
-return "You got a " + score + " out of 6! " + feedback + "";
-
+return "You got a " + score + " out of 6." + feedback + "";
+    alert(feedback);
+    alert(score);
 }
 
 //check answer 2
